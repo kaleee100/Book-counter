@@ -1,0 +1,225 @@
+body {
+  background-color: #754769;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 2.5em;
+}
+
+#boxes {
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Inputit */
+.input {
+  background-color: #fc68b2;
+  max-width: 250px;
+  height: 40px;
+  padding: 0 19px 0 10px;
+  font-size: 1.1em;
+  position: relative;
+  border: none;
+  color: white;
+  outline: 0;
+  overflow: hidden;
+  border-radius: 0.7em;
+  margin: 5px;
+}
+
+.box-input::after,
+.box-input::before {
+  content: "";
+  width: 130px;
+  height: 30px;
+  position: absolute;
+  z-index: -1;
+}
+
+.box-input::after {
+  bottom: 0;
+  right: 0;
+}
+
+.box-input::before {
+  top: 0;
+  left: 0;
+}
+
+.input::placeholder {
+  transition:
+    all 0.5s ease-in,
+    transform 0.2s ease-in 0.6s;
+  color: #ffffff;
+}
+
+.input:focus::placeholder {
+  padding-left: 165px;
+  transform: translateY(-50px);
+}
+
+/* Nappi */
+button {
+  border: 2px solid #ff46a2;
+  background-color: #ff46a2;
+  border-radius: 0.9em;
+  cursor: pointer;
+  padding: 0.8em 1.2em 0.8em 1em;
+  transition: all ease-in-out 0.2s;
+  font-size: 16px;
+  margin: 10px;
+}
+
+button span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #090006; /* Hieman tummempi pinkki hover-efektiin */
+}
+
+/* Footer */
+#footer {
+  background-color: #fc68b2;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0.9em;
+  margin: 20px auto;
+}
+
+/* Report modal */
+.modal {
+  display: none; /* Piilotettu oletuksena */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Puoliläpinäkyvä tumma tausta */
+}
+
+.modal-content {
+  background-color: #2d292c; /* Sama tumma tausta kuin sivulla */
+  color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 2px solid #ff46a2;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+  color: #ff46a2;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: white;
+}
+
+.table-container {
+  max-height: 250px;
+  overflow-y: auto;
+  margin-top: 15px;
+  border: 1px solid #ff46a2;
+  border-radius: 8px;
+}
+
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95em;
+}
+
+.report-table th,
+.report-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #443c42;
+}
+
+.report-table th {
+  background-color: #ff46a2;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.report-table tr:nth-child(even) {
+  background-color: #383337;
+}
+
+.report-table tr:hover {
+  background-color: #4a4348;
+}
+
+.report-summary {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 2px dashed #ff46a2;
+  font-size: 1.05em;
+}
+
+.col-actions {
+  white-space: nowrap;
+  text-align: center;
+}
+
+.btn-edit,
+.btn-save,
+.btn-delete {
+  font-size: 0.8em;
+  padding: 4px 8px;
+  margin: 2px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: #ff46a2;
+  color: white;
+}
+
+.btn-save {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.edit-input {
+  background-color: #554852;
+  color: white;
+  border: 1px solid #ff46a2;
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-size: 0.9em;
+  width: 90%;
+}

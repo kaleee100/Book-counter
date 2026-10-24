@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="frontend/css/styles.css" />
+  </head>
+  <body>
+    <header></header>
+    <div id="main-content">
+      <h1>Kirjalaskuri</h1>
+    </div>
+    <div id="boxes">
+      <div id="box1" class="box">
+        
+        <input
+          type="text"
+          name="text"
+          class="input"
+          placeholder="Kirjan nimi"
+          id="bookTitle"
+        />
+      </div>
+      <div id="box2" class="box">
+        
+        <input
+          type="text"
+          name="text"
+          class="input"
+          placeholder="Kijoittaja"
+          id="bookAuthor"
+        />
+      </div>
+      <div id="box3" class="box">
+        
+        <input
+          type="number"
+          name="text"
+          class="input"
+          placeholder="Sivumäärä"
+          id="bookPages"
+        />
+    </div>
+    <div id="buttons">
+      <button id="add-book">
+  <span>
+    <svg
+      height="24"
+      width="24"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="currentColor"></path>
+    </svg>
+    Lisää kirja
+  </span>
+</button>
+<button id="show-report">
+  <span>
+    <svg
+      height="24"
+      width="24"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="currentColor"></path>
+    </svg>
+    Näytä raportti
+  </span>
+</button>
+    <div id="footer">
+      <div id="result">
+        <h2>Yhteensä:</h2>
+        <p id="result-books">Kirjoja luettu: 0</p>
+        <p id="result-pages">Sivuja yhteensä: 0</p>
+      </div>
+    </div>
+<div id="reportModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" id="close-btn">&times;</span>
+    <h2>Raportti</h2>
+    <p id="modal-stats">Tähän tulee raportin tiedot ja tilastot...</p>
+  </div>
+</div>
+    <script src="frontend/js/script.js"></script>
+  </body>
+</html>
