@@ -22,3 +22,4 @@ pip install Flask
 python backend/init_db.py
 
 python backend/main.py
+
